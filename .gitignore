@@ -1,0 +1,8 @@
+sim_build/
+__pycache__/
+*.o
+*.toml
+*.xml
+*.ghw
+# generated files
+top_constant
