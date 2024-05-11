@@ -4,7 +4,7 @@
 
 The AXI Constant Peripheral is an AXI-compliant module designed to provide constant values based on the address input. It operates as a slave device on the Advanced eXtensible Interface (AXI) bus and offers four selectable constant outputs. These inputs can be extended further if needed.
 
-![](docs/axi_constant_in_vivado.png)
+![AXI Constant in Vivado](docs/axi_constant_in_vivado.png)
 
 ## Simulation
 
@@ -23,10 +23,17 @@ ar_wrap_en <= '1' when (((axi_araddr AND std_logic_vector(to_unsigned(ar_wrap_si
 ## Setup for simulation
 
 1. Clone the project
-    `git clone github.com`
+    `git clone https://github.com/Velho/axi-constant`
 2. Install latest python 3.10+
 3. Install the cocotb and dependencies
 
     `pip3 install cocotb cocotbext-axi`
 
-4. 
+4. Run the simulation
+
+    `cd axi_constant`
+    `make`
+
+5. _Optional_ Waveform is produced under waveform.ghw
+
+    ![AXI Constant Waveform](docs/gtkwave_sim_waveform.png)
