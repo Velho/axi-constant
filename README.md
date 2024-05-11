@@ -32,6 +32,7 @@ ar_wrap_en <= '1' when (((axi_araddr AND std_logic_vector(to_unsigned(ar_wrap_si
 4. Run the simulation
 
     `cd axi_constant`
+
     `make`
 
 5. _Optional_ Waveform is produced under waveform.ghw
